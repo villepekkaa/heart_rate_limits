@@ -21,12 +21,8 @@ export default function App() {
         value={age}
         onChangeText={setAge}
       />
-      {age !== "" && (
-        <>
           <Text style={styles.field}>Lower limit: {lowerLimit.toFixed(2)} bpm</Text>
-          <Text style={styles.field}>Upper limit: {upperLimit.toFixed(2)} bpm</Text>
-        </>
-      )}
+          <Text style={styles.field}>Upper limit: {upperLimit.toFixed(2)} bpm</Text>    
       <StatusBar style="auto" />
     </View>
   );
